@@ -86,20 +86,20 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
           url: 'https://auctions.makerdao.network/',
           title: t('Auctions Dashboard')
         },
+        // {
+        //   url: 'https://migrate.makerdao.com/',
+        //   title: t('Migrate Dashboard')
+        // },
+        // {
+        //   url: 'https://makerburn.com/',
+        //   title: t('MakerBurn')
+        // },
         {
-          url: 'https://migrate.makerdao.com/',
-          title: t('Migrate Dashboard')
+          url: '/inprogress',
+          title: t('GSUc Stats')
         },
         {
-          url: 'https://makerburn.com/',
-          title: t('MakerBurn')
-        },
-        {
-          url: 'https://daistats.com/',
-          title: t('DAI Stats')
-        },
-        {
-          url: 'https://vote.makerdao.com/terms',
+          url: '/terms',
           title: t('Terms')
         }
       ]
