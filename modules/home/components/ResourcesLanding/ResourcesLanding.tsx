@@ -86,7 +86,8 @@ export const ResourcesLanding = (): JSX.Element => {
         <Flex
           sx={{
             flexWrap: 'wrap',
-            justifyContent: ['center', 'space-evenly', 'space-between'],
+            gap: '10px',
+            justifyContent: ['center'],
             width: '100%'
           }}
         >

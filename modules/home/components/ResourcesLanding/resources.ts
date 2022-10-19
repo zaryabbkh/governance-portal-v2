@@ -76,15 +76,15 @@ export const resources: LandingResource[] = [
     logo: '/assets/resource_icon_5.svg',
     summary: 'A unified dashboard for understanding & interacting with auctions of the GSU protocol.'
   },
-  {
-    title: 'MakerBurn',
-    url: 'https://makerburn.com/#/',
-    category: ResourceCategory.PRODUCTS_AND_TOOLS,
-    bg: ResourceBackground.PRODUCTS_AND_TOOLS,
-    color: ResourceColor.PRODUCTS_AND_TOOLS,
-    logo: '/assets/resource_icon_6.svg',
-    summary: 'A data dashboard for the GSU protocol, displaying burn rate, revenues, expenses and more.'
-  },
+  // {
+  //   title: 'GSU Burn',
+  //   url: 'https://makerburn.com/#/',
+  //   category: ResourceCategory.PRODUCTS_AND_TOOLS,
+  //   bg: ResourceBackground.PRODUCTS_AND_TOOLS,
+  //   color: ResourceColor.PRODUCTS_AND_TOOLS,
+  //   logo: '/assets/resource_icon_6.svg',
+  //   summary: 'A data dashboard for the GSU protocol, displaying burn rate, revenues, expenses and more.'
+  // },
   {
     title: 'Technical Docs',
     url: 'https://docs.makerdao.com/',
