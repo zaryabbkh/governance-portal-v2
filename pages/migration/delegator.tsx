@@ -130,7 +130,7 @@ export default function DelegateMigrationPage(): React.ReactElement {
                 </Box>
                 <Box>
                   <Text as="p" sx={{ fontWeight: '600' }}>
-                    Maker delegate contracts expire after 1 year.
+                    GSU protocol delegate contracts expire after 1 year.
                   </Text>
                   <Text as="p" variant="secondary" sx={{ mt: 2 }}>
                     Please migrate your MKR by undelegating from the expiring/expired contracts and
