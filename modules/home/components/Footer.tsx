@@ -214,7 +214,7 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
             );
           })}
         </Flex>
-        <ContactSection heading="Development & UX Channels" icon="makerdux" logos={logos.makerdux} />
+        {/* <ContactSection heading="Development & UX Channels" icon="makerdux" logos={logos.makerdux} /> */}
       </Flex>
     </div>
   );
