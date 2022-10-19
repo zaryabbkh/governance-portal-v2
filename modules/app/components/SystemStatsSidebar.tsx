@@ -61,10 +61,10 @@ export default function SystemStatsSidebar({
 
       return (
         <Flex key={key} sx={{ justifyContent: 'space-between', flexDirection: 'row' }}>
-          <Text sx={{ fontSize: 3, color: 'textSecondary' }}>MKR in Chief</Text>
+          <Text sx={{ fontSize: 3, color: 'textSecondary' }}>GSUp in Chief</Text>
           <Text variant="h2" sx={{ fontSize: 3 }}>
             {chiefBalance ? (
-              `${formatValue(chiefBalance)} MKR`
+              `${formatValue(chiefBalance)} GSUp`
             ) : (
               <Box sx={{ width: 6 }}>
                 <Skeleton />
@@ -101,10 +101,10 @@ export default function SystemStatsSidebar({
 
       return (
         <Flex key={key} sx={{ justifyContent: 'space-between', flexDirection: 'row' }}>
-          <Text sx={{ fontSize: 3, color: 'textSecondary' }}>MKR on Governing Proposal</Text>
+          <Text sx={{ fontSize: 3, color: 'textSecondary' }}>GSUp on Governing Proposal</Text>
           <Text variant="h2" sx={{ fontSize: 3 }}>
             {mkrOnHat ? (
-              `${formatValue(mkrOnHat)} MKR`
+              `${formatValue(mkrOnHat)} GSUp`
             ) : (
               <Box sx={{ width: 6 }}>
                 <Skeleton />

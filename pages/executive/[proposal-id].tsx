@@ -197,7 +197,7 @@ const ProposalView = ({ proposal, spellDiffs }: Props): JSX.Element => {
               />
               <StatBox
                 value={spellData && spellData.mkrSupport && formatValue(BigNumber.from(spellData.mkrSupport))}
-                label="MKR Support"
+                label="GSUp Support"
               />
               <StatBox
                 value={
@@ -367,7 +367,7 @@ const ProposalView = ({ proposal, spellDiffs }: Props): JSX.Element => {
 
                         <Box sx={{ textAlign: 'right' }}>
                           <Text color="onSecondary">
-                            {supporter.percent}% ({new BigNumberJS(supporter.deposits).toFormat(2)} MKR)
+                            {supporter.percent}% ({new BigNumberJS(supporter.deposits).toFormat(2)} GSUp)
                           </Text>
                         </Box>
                       </Flex>

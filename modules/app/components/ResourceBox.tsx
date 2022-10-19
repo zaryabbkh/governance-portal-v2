@@ -88,11 +88,11 @@ const resources: Record<ResourceType, Resource> = {
         url: 'https://forum.makerdao.com/t/recognised-delegate-requirements/9421'
       },
       {
-        linkTitle: "The MKR holder's guide to delegation",
+        linkTitle: "The GSUp holder's guide to delegation",
         url: 'https://forum.makerdao.com/t/mkr-holder-s-guide-to-delegation/9602'
       },
       {
-        linkTitle: "MKR token holder's delegation agreement",
+        linkTitle: "GSUp token holder's delegation agreement",
         url: 'https://forum.makerdao.com/t/token-holders-delegation-agreement/9385'
       },
       {

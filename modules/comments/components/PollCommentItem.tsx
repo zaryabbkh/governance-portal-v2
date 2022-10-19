@@ -44,7 +44,7 @@ export default function PollCommentItem({
     return (
       <Text>
         Voted {voteOptionText} with{' '}
-        {formatValue(comment.comment.voterWeight, undefined, undefined, true, true)} MKR
+        {formatValue(comment.comment.voterWeight, undefined, undefined, true, true)} GSUp
       </Text>
     );
   };

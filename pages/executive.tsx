@@ -191,7 +191,7 @@ export const ExecutiveOverview = ({ proposals }: { proposals?: Proposal[] }): JS
             >
               <Text sx={{ py: 2 }}>
                 An executive vote has passed to update the Chief to a new version. You have{' '}
-                <b>{formatValue(lockedMkrOldChief)} MKR</b> to withdraw from the old chief.
+                <b>{formatValue(lockedMkrOldChief)} GSUp</b> to withdraw from the old chief.
               </Text>
               <Flex>
                 <WithdrawOldChief />
@@ -259,7 +259,7 @@ export const ExecutiveOverview = ({ proposals }: { proposals?: Proposal[] }): JS
         lockedMkr.gt(0) && (
           <>
             <ProgressBar step={2} />
-            <MigrationBadge>Your MKR has been deposited. You are now ready to vote.</MigrationBadge>
+            <MigrationBadge>Your GSUp has been deposited. You are now ready to vote.</MigrationBadge>
           </>
         )}
       <Stack>
@@ -428,7 +428,7 @@ export const ExecutiveOverview = ({ proposals }: { proposals?: Proposal[] }): JS
                 ]}
               />
             </ErrorBoundary>
-            <ErrorBoundary componentName="MKR Liquidity">
+            <ErrorBoundary componentName="GSUp Liquidity">
               <MkrLiquiditySidebar network={network} />
             </ErrorBoundary>
             <ResourceBox type={'executive'} />

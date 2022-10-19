@@ -99,8 +99,8 @@ export default function DelegateExpiryDate({
                 </Heading>
                 <Text sx={{ mb: 3, color: 'onSecondary', textAlign: 'center' }}>
                   GSU protocol delegate contracts expire after 1 year. Please{' '}
-                  <InternalLink href="/migration/delegator" title="Migrate your MKR">
-                    <span sx={{ color: 'accentBlue' }}>migrate your MKR</span>
+                  <InternalLink href="/migration/delegator" title="Migrate your GSUp">
+                    <span sx={{ color: 'accentBlue' }}>migrate your GSUp</span>
                   </InternalLink>{' '}
                   by undelegating from the expiring/expired contracts and redelegating to the new contracts.
                 </Text>

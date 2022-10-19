@@ -37,7 +37,7 @@ export function MigrationInfo({
         </Text>
 
         <Text as="p" variant="secondary" sx={{ mt: 3 }}>
-          Completing the migration will also assist your delegators in migrating their MKR to your new
+          Completing the migration will also assist your delegators in migrating their GSUp to your new
           delegate contract address. Migration is not supported for Shadow Delegates, only for Recognized
           Delegates.
         </Text>
@@ -55,7 +55,7 @@ export function MigrationInfo({
               </Text>
               <Text as="p" variant="secondary" sx={{ mt: 2 }}>
                 Please finalize your migration as soon as possible so that your delegators can swiftly migrate
-                their MKR, minimizing risk of governance attacks.
+                their GSUp, minimizing risk of governance attacks.
               </Text>
             </Flex>
           </Flex>

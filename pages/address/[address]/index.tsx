@@ -37,7 +37,7 @@ const AddressView = ({ addressInfo }: { addressInfo: AddressApiResponse }) => {
         } Information`}
         description={`See all the voting activity of ${
           addressInfo.delegateInfo?.name || addressInfo.address
-        } in Maker Governance. `}
+        } in GSU protocol Governance. `}
         image={addressInfo.delegateInfo?.picture}
       />
 
@@ -72,7 +72,7 @@ const AddressView = ({ addressInfo }: { addressInfo: AddressApiResponse }) => {
         </Stack>
         <Stack gap={3}>
           {addressInfo.isDelegate && addressInfo.delegateInfo && (
-            <ErrorBoundary componentName="Delegate MKR">
+            <ErrorBoundary componentName="Delegate GSUp">
               <ManageDelegation delegate={addressInfo.delegateInfo} />
             </ErrorBoundary>
           )}
