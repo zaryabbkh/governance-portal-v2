@@ -121,7 +121,7 @@ const HeaderMenu = ({ onToggleTheme, mode, ...props }): JSX.Element => {
             variant: 'menubuttons.default.headerItem'
           }}
         >
-          <MenuItemContent icon="color_mode_sun" label={`${mode === 'dark' ? 'Light' : 'Dark'} mode`} />
+          {/* <MenuItemContent icon="color_mode_sun" label={`${mode === 'dark' ? 'Light' : 'Dark'} mode`} /> */}
         </MenuItem>
       </MenuList>
     </Menu>
@@ -462,7 +462,7 @@ const MobileMenu = ({ hide, router, gas, onToggleTheme, mode, network }) => {
               </ExternalLink>
             </Flex>
             <Flex onClick={onToggleTheme}>
-              <MenuItemContent icon="color_mode_sun" label={`${mode === 'dark' ? 'Light' : 'Dark'} mode`} />
+              {/* <MenuItemContent icon="color_mode_sun" label={`${mode === 'dark' ? 'Light' : 'Dark'} mode`} /> */}
             </Flex>
           </Flex>
         </Flex>
