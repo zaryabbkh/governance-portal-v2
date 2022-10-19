@@ -14,20 +14,20 @@ export function SystemStats(): JSX.Element {
 
   const infoUnits = [
     {
-      title: 'Dai Savings Rate',
+      title: 'GSUc Savings Rate',
       value: daiSavingsRate ? `${daiSavingsRate.toFixed(2)}%` : <Skeleton />
     },
     {
-      title: 'Total Dai',
-      value: totalDai ? `${formatValue(totalDai, 'rad')} DAI` : <Skeleton />
+      title: 'Total GSUc',
+      value: totalDai ? `${formatValue(totalDai, 'rad')} GSUc` : <Skeleton />
     },
     {
-      title: 'Dai Debt Ceiling',
-      value: debtCeiling ? `${formatValue(debtCeiling, 'rad')} DAI` : <Skeleton />
+      title: 'GSUc Debt Ceiling',
+      value: debtCeiling ? `${formatValue(debtCeiling, 'rad')} GSUc` : <Skeleton />
     },
     {
       title: 'System Surplus',
-      value: systemSurplus ? `${formatValue(systemSurplus, 'rad')} DAI` : <Skeleton />
+      value: systemSurplus ? `${formatValue(systemSurplus, 'rad')} GSUc` : <Skeleton />
     }
   ];
 
