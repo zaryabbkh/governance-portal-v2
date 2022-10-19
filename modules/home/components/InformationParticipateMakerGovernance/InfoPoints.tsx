@@ -28,13 +28,13 @@ export const infoPoints: InfoPoint[] = [
       }
     ],
 
-    color: '#1AAB9B',
+    color: '#e94a7433',
     description:
       "Off-chain governance refers to processes for making decisions that don't require on-chain voting and gathering feedback prior to on-chain voting. Off-chain governance happens on the Maker Governance Forum, where the community meets to propose and discuss new proposals. Anyone can participate in off-chain governance."
   },
   {
     number: '02',
-    color: '#1ACCA7',
+    color: '#b3ca6533',
     title: 'Understand on-chain governance',
     titleFirst: 'Understand',
     titleSecond: 'on-chain governance',
@@ -50,7 +50,7 @@ export const infoPoints: InfoPoint[] = [
   },
   {
     number: '03',
-    color: '#4B68FF',
+    color: '#b35fff33',
     title: 'Set up your voting wallet',
     titleFirst: 'Set up your',
     titleSecond: 'voting wallet',
@@ -61,7 +61,7 @@ export const infoPoints: InfoPoint[] = [
   },
   {
     number: '04',
-    color: '#9A4BFF',
+    color: '#e94a7433',
     title: 'Delegate your voting power',
     titleFirst: 'Option 1:',
     titleSecond: 'Delegate your voting power',
@@ -81,7 +81,7 @@ export const infoPoints: InfoPoint[] = [
   },
   {
     number: '05',
-    color: '#E64BFF',
+    color: '#e94a7433',
     title: 'Vote manually',
     titleFirst: 'Option 2:',
     titleSecond: 'Vote manually',
