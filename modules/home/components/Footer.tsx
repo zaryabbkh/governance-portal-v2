@@ -33,7 +33,7 @@ const ContactSection = ({ heading, logos, icon }) => {
           </ExternalLink>
         ))}
       </Flex>
-      <Icon name={icon} size={4} sx={{ my: [0, 0, 4] }} />
+      <Icon name={icon} size={'130px'} sx={{ my: [0, 0, 4] }} />
     </Flex>
   );
 };
@@ -147,7 +147,7 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
       { title: 'Discord', url: 'https://discord.gg/GHcFMdKden', icon: 'discord' },
       { title: 'Twitter', url: 'https://twitter.com/MakerDUX', icon: 'twitter' },
       { title: 'GitHub', url: 'https://github.com/makerdao/governance-portal-v2', icon: 'github' },
-      { title: 'Canny', url: 'https://makergovernance.canny.io/', icon: 'canny' },
+      { title: 'Canny', url: 'https://makergovernance.canny.io/', icon: 'ca      nny' },
       { title: 'Immunefi', url: 'https://immunefi.com/bounty/makerdao/', icon: 'immunefi' }
     ]
   };
