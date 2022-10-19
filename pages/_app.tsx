@@ -40,7 +40,7 @@ const App = ({ Component, pageProps }: AppProps): React.ReactElement => {
       {/* @ts-ignore */}
       <ThemeProvider theme={theme}>
         <NextNprogress
-          color="#1aab9b"
+          color={theme.colors.primary}
           startPosition={0.3}
           stopDelayMs={200}
           height={3}
