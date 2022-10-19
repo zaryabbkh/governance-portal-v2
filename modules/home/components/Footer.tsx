@@ -137,18 +137,18 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
 
   const logos = {
     makerdao: [
-      { title: 'Discord', url: 'https://chat.makerdao.com', icon: 'discord' },
-      { title: 'Twitter', url: 'https://twitter.com/MakerDAO', icon: 'twitter' },
-      { title: 'Reddit', url: 'https://www.reddit.com/r/MakerDAO/', icon: 'reddit' },
-      { title: 'YouTube', url: 'https://www.youtube.com/MakerDAO', icon: 'youtube' },
-      { title: 'GitHub', url: 'https://www.github.com/makerdao', icon: 'github' }
+      { title: 'Discord', url: 'https://discord.com/invite/cm3tmM37W3', icon: 'discord' },
+      { title: 'Twitter', url: 'https://twitter.com/gsucoin', icon: 'twitter' },
+      // { title: 'Reddit', url: 'https://www.reddit.com/r/MakerDAO/', icon: 'reddit' },
+      // { title: 'YouTube', url: 'https://www.youtube.com/MakerDAO', icon: 'youtube' },
+      { title: 'GitHub', url: 'https://www.github.com/gsu-protocol', icon: 'github' }
     ],
     makerdux: [
-      { title: 'Discord', url: 'https://discord.gg/GHcFMdKden', icon: 'discord' },
-      { title: 'Twitter', url: 'https://twitter.com/MakerDUX', icon: 'twitter' },
-      { title: 'GitHub', url: 'https://github.com/makerdao/governance-portal-v2', icon: 'github' },
-      { title: 'Canny', url: 'https://makergovernance.canny.io/', icon: 'ca      nny' },
-      { title: 'Immunefi', url: 'https://immunefi.com/bounty/makerdao/', icon: 'immunefi' }
+      // { title: 'Discord', url: 'https://discord.gg/GHcFMdKden', icon: 'discord' },
+      // { title: 'Twitter', url: 'https://twitter.com/MakerDUX', icon: 'twitter' },
+      // { title: 'GitHub', url: 'https://github.com/makerdao/governance-portal-v2', icon: 'github' },
+      // { title: 'Canny', url: 'https://makergovernance.canny.io/', icon: 'ca      nny' },
+      // { title: 'Immunefi', url: 'https://immunefi.com/bounty/makerdao/', icon: 'immunefi' }
     ]
   };
 

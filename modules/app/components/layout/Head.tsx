@@ -16,7 +16,7 @@ export function HeadComponent({
   const dev = config.NODE_ENV === 'development';
 
   const defaultDescription =
-    'The MakerDAO Governance Portal allows for anyone to view governance proposals, and also allows for MKR holders to vote.';
+    'The GSU protocol Governance Portal allows for anyone to view governance proposals, and also allows for MKR holders to vote.';
   const defaultTitle = 'Governance Portal';
 
   const renderedTitle = title || defaultTitle;

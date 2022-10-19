@@ -114,7 +114,7 @@ export default function DelegateMigrationPage(): React.ReactElement {
                   Action required: Migrate your delegated MKR
                 </Heading>
                 <Text as="p" variant="secondary">
-                  One or more of your MakerDAO delegate&lsquo;s contracts are expiring.{' '}
+                  One or more of your GSU protocol delegate&lsquo;s contracts are expiring.{' '}
                   <ExternalLink
                     href="https://manual.makerdao.com/delegation/delegate-expiration"
                     title="Read more about delegate expiration"

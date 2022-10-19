@@ -23,7 +23,7 @@ const resources: Record<ResourceType, Resource> = {
         linkTitle: 'Governance Risk Framework',
         url: 'https://blog.makerdao.com/makerdao-governance-risk-framework/'
       },
-      { linkTitle: 'Awesome MakerDAO', url: 'https://github.com/makerdao/awesome-makerdao/' },
+      { linkTitle: 'Awesome GSU protocol', url: 'https://github.com/makerdao/awesome-makerdao/' },
       {
         linkTitle: 'Governance Call Schedule',
         url: 'https://makerdao.world/resources/governance_and_risk_meetings/'
@@ -34,7 +34,7 @@ const resources: Record<ResourceType, Resource> = {
     boxTitle: 'Polling FAQs',
     links: [
       {
-        linkTitle: 'How to participate in MakerDAO governance?',
+        linkTitle: 'How to participate in GSU protocol governance?',
         url: 'https://makerdao.world/en/learn/governance/how-voting-works/'
       },
       {
@@ -55,7 +55,7 @@ const resources: Record<ResourceType, Resource> = {
     boxTitle: 'Executive Proposal FAQs',
     links: [
       {
-        linkTitle: 'How to participate in MakerDAO governance?',
+        linkTitle: 'How to participate in GSU protocol governance?',
         url: 'https://makerdao.world/en/learn/governance/how-voting-works/'
       },
       {
@@ -80,7 +80,7 @@ const resources: Record<ResourceType, Resource> = {
     boxTitle: 'Delegation FAQs',
     links: [
       {
-        linkTitle: 'What is vote delegation and how does it work in MakerDAO?',
+        linkTitle: 'What is vote delegation and how does it work in GSU protocol?',
         url: 'https://forum.makerdao.com/t/delegation-and-makerdao/9429'
       },
       {

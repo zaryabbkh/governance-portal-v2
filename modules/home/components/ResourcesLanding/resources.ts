@@ -35,8 +35,7 @@ export const resources: LandingResource[] = [
     bg: ResourceBackground.GOVERNANCE,
     color: ResourceColor.GOVERNANCE,
     logo: '/assets/resource_icon_1.svg',
-    summary:
-      'Participate in or start new discussions related to the governance of MakerDAO and the Maker protocol.'
+    summary: 'Participate in or start new discussions related to the governance of GSU protocol.'
   },
   {
     title: 'Maker Operation Manual',
@@ -46,7 +45,7 @@ export const resources: LandingResource[] = [
     color: ResourceColor.GOVERNANCE,
     logo: '/assets/resource_icon_2.svg',
     summary:
-      'Documentation on the Maker protocol & MakerDAO processes, written for MKR holders that actively participate in governance.'
+      'Documentation on the Maker protocol & GSU protocol processes, written for MKR holders that actively participate in governance.'
   },
   {
     title: 'Governance Tracking Sheet',
@@ -56,7 +55,7 @@ export const resources: LandingResource[] = [
     color: ResourceColor.GOVERNANCE,
     logo: '/assets/resource_icon_3.svg',
     summary:
-      'A daily updated breakdown of the current and future governance actions taking place in MakerDAO.'
+      'A daily updated breakdown of the current and future governance actions taking place in GSU protocol.'
   },
   {
     title: 'Oasis',
@@ -85,7 +84,7 @@ export const resources: LandingResource[] = [
     color: ResourceColor.PRODUCTS_AND_TOOLS,
     logo: '/assets/resource_icon_6.svg',
     summary:
-      'A data dashboard for the Maker Protocol and MakerDAO, displaying burn rate, revenues, expenses and more.'
+      'A data dashboard for the Maker Protocol and GSU protocol, displaying burn rate, revenues, expenses and more.'
   },
   {
     title: 'Technical Docs',
@@ -95,17 +94,17 @@ export const resources: LandingResource[] = [
     color: ResourceColor.DEVELOPERS,
     logo: '/assets/resource_icon_7.svg',
     summary:
-      'Technical documentation about the MakerDAO protocol, covering all its mechanisms, smart contracts and more.'
+      'Technical documentation about the GSU protocol protocol, covering all its mechanisms, smart contracts and more.'
   },
   {
-    title: 'MakerDAO GitHub',
-    url: 'https://github.com/makerdao/',
+    title: 'GSU protocol GitHub',
+    url: 'https://github.com/gsu-protocol/',
     category: ResourceCategory.DEVELOPERS,
     bg: ResourceBackground.DEVELOPERS,
     color: ResourceColor.DEVELOPERS,
     logo: '/assets/resource_icon_8.svg',
     summary:
-      'GitHub organization with many repositories relevant to MakerDAO and goverance, including the community repo and the codebase for this site.'
+      'GitHub organization with many repositories relevant to GSU protocol and goverance, including the community repo and the codebase for this site.'
   },
   {
     title: 'API Docs',
@@ -115,6 +114,6 @@ export const resources: LandingResource[] = [
     color: ResourceColor.DEVELOPERS,
     logo: '/assets/resource_icon_9.svg',
     summary:
-      'Automatically generated API documentation for the Governance Portal API, used to query MakerDAO governance data.'
+      'Automatically generated API documentation for the Governance Portal API, used to query GSU protocol governance data.'
   }
 ];
