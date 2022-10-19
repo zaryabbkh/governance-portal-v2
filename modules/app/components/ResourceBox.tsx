@@ -17,7 +17,7 @@ const resources: Record<ResourceType, Resource> = {
   general: {
     boxTitle: 'General Governance Resources',
     links: [
-      { linkTitle: 'Maker Forum', url: 'https://forum.makerdao.com/' },
+      { linkTitle: 'GSU protocol Forum', url: 'https://forum.makerdao.com/' },
       { linkTitle: 'Governance FAQs', url: 'https://makerdao.world/learn/governance/governance-faq/' },
       {
         linkTitle: 'Governance Risk Framework',

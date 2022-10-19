@@ -89,7 +89,7 @@ export default function Participation({
         <Stack gap={2}>
           <Heading as="h2">Follow the Conversation and Participate</Heading>
           <Text as="p" sx={{ color: 'textSecondary', px: 'inherit', fontSize: [2, 4] }}>
-            Engage with the Maker Community and make informed decisions.
+            Engage with the GSU protocol Community and make informed decisions.
           </Text>
         </Stack>
       </Container>

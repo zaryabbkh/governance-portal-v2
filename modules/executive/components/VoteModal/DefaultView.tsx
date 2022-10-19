@@ -353,7 +353,7 @@ export default function DefaultVoteModalView({
                 setHatChecked(event.target.checked);
               }}
             />
-            Keep my MKR on old proposal to secure the Maker protocol
+            Keep my MKR on old proposal to secure the GSU protocol
           </Label>
         ) : null}
       </Box>

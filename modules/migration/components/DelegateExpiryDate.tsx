@@ -98,7 +98,7 @@ export default function DelegateExpiryDate({
                   This delegate contract {delegate.expired ? 'has expired' : 'is about to expire'}.
                 </Heading>
                 <Text sx={{ mb: 3, color: 'onSecondary', textAlign: 'center' }}>
-                  Maker delegate contracts expire after 1 year. Please{' '}
+                  GSU protocol delegate contracts expire after 1 year. Please{' '}
                   <InternalLink href="/migration/delegator" title="Migrate your MKR">
                     <span sx={{ color: 'accentBlue' }}>migrate your MKR</span>
                   </InternalLink>{' '}

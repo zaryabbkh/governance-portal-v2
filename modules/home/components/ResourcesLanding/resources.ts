@@ -29,7 +29,7 @@ type LandingResource = {
 
 export const resources: LandingResource[] = [
   {
-    title: 'Maker Governance Forum',
+    title: 'GSU protocol Governance Forum',
     url: 'https://forum.makerdao.com/',
     category: ResourceCategory.GOVERNANCE,
     bg: ResourceBackground.GOVERNANCE,
@@ -38,14 +38,14 @@ export const resources: LandingResource[] = [
     summary: 'Participate in or start new discussions related to the governance of GSU protocol.'
   },
   {
-    title: 'Maker Operation Manual',
+    title: 'GSU protocol Operation Manual',
     url: 'https://manual.makerdao.com',
     category: ResourceCategory.GOVERNANCE,
     bg: ResourceBackground.GOVERNANCE,
     color: ResourceColor.GOVERNANCE,
     logo: '/assets/resource_icon_2.svg',
     summary:
-      'Documentation on the Maker protocol & GSU protocol processes, written for MKR holders that actively participate in governance.'
+      'Documentation on the GSU protocol processes, written for GSUp holders that actively participate in governance.'
   },
   {
     title: 'Governance Tracking Sheet',
@@ -65,7 +65,7 @@ export const resources: LandingResource[] = [
     color: ResourceColor.PRODUCTS_AND_TOOLS,
     logo: '/assets/resource_icon_4.svg',
     summary:
-      'The most popular user interface for interacting with the Maker Protocol, used for creating & managing vaults.'
+      'The most popular user interface for interacting with the GSU protocol, used for creating & managing vaults.'
   },
   {
     title: 'Auctions Dashboard',
@@ -74,7 +74,7 @@ export const resources: LandingResource[] = [
     bg: ResourceBackground.PRODUCTS_AND_TOOLS,
     color: ResourceColor.PRODUCTS_AND_TOOLS,
     logo: '/assets/resource_icon_5.svg',
-    summary: 'A unified dashboard for understanding & interacting with auctions of the Maker Protocol.'
+    summary: 'A unified dashboard for understanding & interacting with auctions of the GSU protocol.'
   },
   {
     title: 'MakerBurn',
@@ -83,8 +83,7 @@ export const resources: LandingResource[] = [
     bg: ResourceBackground.PRODUCTS_AND_TOOLS,
     color: ResourceColor.PRODUCTS_AND_TOOLS,
     logo: '/assets/resource_icon_6.svg',
-    summary:
-      'A data dashboard for the Maker Protocol and GSU protocol, displaying burn rate, revenues, expenses and more.'
+    summary: 'A data dashboard for the GSU protocol, displaying burn rate, revenues, expenses and more.'
   },
   {
     title: 'Technical Docs',

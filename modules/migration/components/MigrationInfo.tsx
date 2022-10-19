@@ -17,7 +17,7 @@ export function MigrationInfo({
     <Flex>
       <Flex sx={{ flexDirection: 'column' }}>
         <Text as="p" variant="secondary">
-          Maker delegate contracts are{' '}
+          GSU protocol delegate contracts are{' '}
           <ExternalLink
             href="https://manual.makerdao.com/delegation/delegate-expiration 
 "
@@ -27,7 +27,8 @@ export function MigrationInfo({
               designed to expire annually
             </Text>
           </ExternalLink>{' '}
-          in order to protect the Maker protocol against stale MKR tokens participating in Maker governance.
+          in order to protect the GSU protocol against stale GSUp tokens participating in GSU protocol
+          governance.
         </Text>
 
         <Text as="p" variant="secondary" sx={{ mt: 3 }}>

@@ -120,15 +120,15 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
           title: t('API Docs')
         },
         {
-          url: 'https://github.com/makerdao/developerguides',
+          url: 'https://github.com/gsu-protocol/developerguides',
           title: t('Developer Guides')
         },
         {
-          url: 'https://www.notion.so/makerdao/Maker-Brand-ac517c82ff9a43089d0db5bb2ee045a4',
+          url: 'https://linktr.ee/gsucoin',
           title: t('Brand Assets')
         },
         {
-          url: 'https://makerdao.com/en/feeds/',
+          url: 'https://gsuprotocol.io/en/feeds/',
           title: t('Oracle Feeds')
         }
       ]

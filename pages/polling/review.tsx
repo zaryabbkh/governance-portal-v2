@@ -108,7 +108,7 @@ const PollingReview = ({ polls }: PollingReviewPageData) => {
         previousVotesLength > 1 ? previousVotesLength : 'a'
       } MakerDAO governance poll${
         previousVotesLength > 1 ? 's' : ''
-      }! Find my votes and all Maker governance proposals on the Governance Portal:`;
+      }! Find my votes and all GSU protocol governance proposals on the Governance Portal:`;
     }
 
     return (
