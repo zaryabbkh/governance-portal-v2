@@ -23,7 +23,7 @@ const resources: Record<ResourceType, Resource> = {
         linkTitle: 'Governance Risk Framework',
         url: 'https://blog.gsuprotocol.io/makerdao-governance-risk-framework/'
       },
-      { linkTitle: 'Awesome GSU protocol', url: 'https://github.com/makerdao/awesome-makerdao/' },
+      { linkTitle: 'Awesome GSU protocol', url: 'https://github.com/gsu-protocol/awesome-makerdao/' },
       {
         linkTitle: 'Governance Call Schedule',
         url: 'https://gsuprotocol.world/resources/governance_and_risk_meetings/'

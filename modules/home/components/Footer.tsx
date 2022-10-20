@@ -147,7 +147,7 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
     makerdux: [
       // { title: 'Discord', url: 'https://discord.gg/GHcFMdKden', icon: 'discord' },
       // { title: 'Twitter', url: 'https://twitter.com/MakerDUX', icon: 'twitter' },
-      // { title: 'GitHub', url: 'https://github.com/makerdao/governance-portal-v2', icon: 'github' },
+      // { title: 'GitHub', url: 'https://github.com/gsu-protocol/governance-portal-v2', icon: 'github' },
       // { title: 'Canny', url: 'https://makergovernance.canny.io/', icon: 'ca      nny' },
       // { title: 'Immunefi', url: 'https://immunefi.com/bounty/makerdao/', icon: 'immunefi' }
     ]
