@@ -199,7 +199,7 @@ export default function SystemStatsSidebar({
           System Info
         </Heading>
         <ExternalLink
-          href="https://daistats.com/"
+          href="https://gsustats.gsuprotocol.io/"
           target="_blank"
           sx={{ color: 'accentBlue', fontSize: 3, ':hover': { color: 'accentBlueEmphasis' } }}
         >

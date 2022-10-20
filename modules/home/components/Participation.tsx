@@ -132,7 +132,7 @@ export default function Participation({
             <Flex sx={{ justifyContent: 'space-between' }}>
               <Heading>Top Voters</Heading>
               <ExternalLink
-                href="https://governance-metrics-dashboard.vercel.app/"
+                href="https://governance-metrics-dashboard.gsuprotocol.io/"
                 title="View More Metrics"
                 target="_blank"
               >

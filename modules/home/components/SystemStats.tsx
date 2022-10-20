@@ -31,5 +31,5 @@ export function SystemStats(): JSX.Element {
     }
   ];
 
-  return <Stats title="System Stats" infoUnits={infoUnits} viewMoreUrl="https://daistats.com/" />;
+  return <Stats title="System Stats" infoUnits={infoUnits} viewMoreUrl="https://gsustats.gsuprotocol.io/" />;
 }
