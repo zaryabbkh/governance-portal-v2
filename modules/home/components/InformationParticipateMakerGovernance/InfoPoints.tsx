@@ -71,7 +71,7 @@ export const infoPoints: InfoPoint[] = [
         linkTitle: 'Learn more about delegation'
       },
       {
-        linkHref: 'https://vote.makerdao.com/delegates',
+        linkHref: 'https://vote.gsuprotocol.io/delegates',
         linkTitle: 'Choose a suitable delegate'
       }
     ],
@@ -87,7 +87,7 @@ export const infoPoints: InfoPoint[] = [
     titleSecond: 'Vote manually',
     links: [
       {
-        linkHref: 'https://vote.makerdao.com/polling',
+        linkHref: 'https://vote.gsuprotocol.io/polling',
         linkTitle: 'Start voting on active governance polls'
       }
     ],

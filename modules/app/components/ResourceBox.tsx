@@ -21,7 +21,7 @@ const resources: Record<ResourceType, Resource> = {
       { linkTitle: 'Governance FAQs', url: 'https://gsuprotocol.world/learn/governance/governance-faq/' },
       {
         linkTitle: 'Governance Risk Framework',
-        url: 'https://blog.makerdao.com/makerdao-governance-risk-framework/'
+        url: 'https://blog.gsuprotocol.io/makerdao-governance-risk-framework/'
       },
       { linkTitle: 'Awesome GSU protocol', url: 'https://github.com/makerdao/awesome-makerdao/' },
       {

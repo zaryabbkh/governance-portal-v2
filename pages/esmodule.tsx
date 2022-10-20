@@ -191,7 +191,7 @@ const ESModule = (): React.ReactElement => {
           {thresholdAmount ? `${formatValue(thresholdAmount, 'wad', 0)}` : '---'} GSUp are entered into the
           ESM, emergency shutdown can be executed.{' '}
           <ExternalLink
-            href="https://docs.makerdao.com/smart-contract-modules/emergency-shutdown-module"
+            href="https://docs.gsuprotocol.io/smart-contract-modules/emergency-shutdown-module"
             title="View emergency shutdown docs"
           >
             <Text>Read the documentation here.</Text>

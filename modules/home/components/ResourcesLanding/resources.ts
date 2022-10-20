@@ -87,7 +87,7 @@ export const resources: LandingResource[] = [
   // },
   {
     title: 'Technical Docs',
-    url: 'https://docs.makerdao.com/',
+    url: 'https://docs.gsuprotocol.io/',
     category: ResourceCategory.DEVELOPERS,
     bg: ResourceBackground.DEVELOPERS,
     color: ResourceColor.DEVELOPERS,

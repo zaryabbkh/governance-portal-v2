@@ -54,7 +54,7 @@ export default function PollCommentItem({
       <CommentItem
         comment={comment}
         votedOption={getVotedOption()}
-        // twitterUrl={`https://twitter.com/intent/tweet?text=${getTwitterMessage()}&url=${`https://vote.makerdao.com/polling/${poll.slug}#comments?network=${network}`}`}
+        // twitterUrl={`https://twitter.com/intent/tweet?text=${getTwitterMessage()}&url=${`https://vote.gsuprotocol.io/polling/${poll.slug}#comments?network=${network}`}`}
       />
     </Box>
   );

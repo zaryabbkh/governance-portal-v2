@@ -88,7 +88,7 @@ const Delegates = ({ delegates, stats, tags }: DelegatesPageData) => {
       <HeadComponent
         title="Delegates"
         description="Vote delegation allows for GSUp holders to delegate their voting power to delegates, which increases the effectiveness and efficiency of the governance process."
-        image={'https://vote.makerdao.com/seo/delegates.png'}
+        image={'https://vote.gsuprotocol.io/seo/delegates.png'}
       />
       <Stack>
         <Flex sx={{ alignItems: 'center', flexDirection: ['column', 'row'] }}>

@@ -144,13 +144,13 @@ const ModalContent = ({
               <Text as="p" sx={{ fontSize: 2, mt: 3, color: 'textSecondary', textAlign: 'center' }}>
                 Interested in creating a proxy contract instead of depositing directly into Chief? Learn more{' '}
                 <ExternalLink
-                  href="https://blog.makerdao.com/the-makerdao-voting-proxy-contract/"
+                  href="https://blog.gsuprotocol.io/the-makerdao-voting-proxy-contract/"
                   title="Read about proxy contracts"
                 >
                   <Text sx={{ color: 'accentBlue', fontSize: 2 }}>here</Text>
                 </ExternalLink>{' '}
                 and create one{' '}
-                <ExternalLink href="https://v1.vote.makerdao.com/proxysetup" title="Go to proxy setup">
+                <ExternalLink href="https://v1.vote.gsuprotocol.io/proxysetup" title="Go to proxy setup">
                   <Text sx={{ color: 'accentBlue', fontSize: 2 }}>here</Text>
                 </ExternalLink>
                 .

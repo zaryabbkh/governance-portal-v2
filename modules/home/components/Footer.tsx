@@ -88,7 +88,7 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
           title: t('Auctions Dashboard')
         },
         // {
-        //   url: 'https://migrate.makerdao.com/',
+        //   url: 'https://migrate.gsuprotocol.io/',
         //   title: t('Migrate Dashboard')
         // },
         // {
@@ -96,7 +96,7 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
         //   title: t('MakerBurn')
         // },
         {
-          url: '/inprogress',
+          url: 'https://gsustats.gsuprotocol.io',
           title: t('GSUc Stats')
         },
         {
@@ -109,11 +109,11 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
       header: t('Developer'),
       list: [
         {
-          url: 'https://makerdao.com/whitepaper',
+          url: 'https://www.gsuprotocol.io/_files/ugd/552241_f8b3211df20c463e85d8f292a06944f4.pdf',
           title: t('Whitepaper')
         },
         {
-          url: 'https://docs.makerdao.com/',
+          url: 'https://docs.gsuprotocol.io/',
           title: t('Technical Docs')
         },
         {
