@@ -280,7 +280,7 @@ export const ExecutiveOverview = ({ proposals }: { proposals?: Proposal[] }): JS
           {(startDate || endDate) && !isValidating && (
             <Button
               variant={'outline'}
-              sx={{ ml: 3 }}
+              sx={{ ml: 3, p: ['5px 10px', '8px'], fontSize: ['10px', '12px'] }}
               onClick={resetExecutiveFilters}
               data-testid="executive-reset-filters"
             >

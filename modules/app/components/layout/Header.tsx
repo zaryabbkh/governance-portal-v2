@@ -163,7 +163,7 @@ const Header = (): JSX.Element => {
       as="header"
       pt={3}
       pb={[4, 5]}
-      px={[2, 0]}
+      px={[1, 0]}
       variant="styles.header"
       sx={{
         display: 'flex',
@@ -174,7 +174,7 @@ const Header = (): JSX.Element => {
     >
       <Flex sx={{ flexDirection: 'row', alignItems: 'center' }}>
         <InternalLink href={'/'} title="View homepage">
-          <IconButton aria-label="GSU protocol home" sx={{ width: '130px', height: 'auto', p: 0 }}>
+          <IconButton aria-label="GSU protocol home" sx={{ width: ['100px', '130px'], height: 'auto', p: 0 }}>
             <Icon name="maker" size="130px" color="text" sx={{ cursor: 'pointer' }} />
           </IconButton>
         </InternalLink>
