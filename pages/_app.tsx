@@ -51,12 +51,11 @@ const App = ({ Component, pageProps }: AppProps): React.ReactElement => {
           <BallotProvider>
             <HeadComponent />
             {process.env.NODE_ENV === 'production' && (
-              <Script
-                data-goatcounter="https://dux-makerdao.goatcounter.com/count"
+              <script
+                data-goatcounter="https://governance-portal.goatcounter.com/count"
                 async
                 src="//gc.zgo.at/count.js"
-                strategy="afterInteractive"
-              />
+              ></script>
             )}
             <CookiesProvider disabled={false}>
               <AnalyticsProvider>
