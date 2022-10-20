@@ -17,7 +17,7 @@ const resources: Record<ResourceType, Resource> = {
   general: {
     boxTitle: 'General Governance Resources',
     links: [
-      { linkTitle: 'GSU protocol Forum', url: 'https://forum.makerdao.com/' },
+      { linkTitle: 'GSU protocol Forum', url: 'https://forum.gsuprotocol.io/' },
       { linkTitle: 'Governance FAQs', url: 'https://makerdao.world/learn/governance/governance-faq/' },
       {
         linkTitle: 'Governance Risk Framework',
@@ -81,23 +81,23 @@ const resources: Record<ResourceType, Resource> = {
     links: [
       {
         linkTitle: 'What is vote delegation and how does it work in GSU protocol?',
-        url: 'https://forum.makerdao.com/t/delegation-and-makerdao/9429'
+        url: 'https://forum.gsuprotocol.io/t/delegation-and-makerdao/9429'
       },
       {
         linkTitle: 'What are the requirements for becoming a recognized delegate?',
-        url: 'https://forum.makerdao.com/t/recognised-delegate-requirements/9421'
+        url: 'https://forum.gsuprotocol.io/t/recognised-delegate-requirements/9421'
       },
       {
         linkTitle: "The GSUp holder's guide to delegation",
-        url: 'https://forum.makerdao.com/t/mkr-holder-s-guide-to-delegation/9602'
+        url: 'https://forum.gsuprotocol.io/t/mkr-holder-s-guide-to-delegation/9602'
       },
       {
         linkTitle: "GSUp token holder's delegation agreement",
-        url: 'https://forum.makerdao.com/t/token-holders-delegation-agreement/9385'
+        url: 'https://forum.gsuprotocol.io/t/token-holders-delegation-agreement/9385'
       },
       {
         linkTitle: 'Recognized delegate code of conduct',
-        url: 'https://forum.makerdao.com/t/recognised-delegate-code-of-conduct/9384'
+        url: 'https://forum.gsuprotocol.io/t/recognised-delegate-code-of-conduct/9384'
       }
     ]
   }

@@ -82,7 +82,7 @@ export default function InformationParticipateMakerGovernance(): React.ReactElem
             </Box>
             <Box>
               <ExternalLink
-                href="https://manual.makerdao.com/"
+                href="https://manual.gsuprotocol.io/"
                 title="Learn more"
                 styles={{ color: 'inherit' }}
               >

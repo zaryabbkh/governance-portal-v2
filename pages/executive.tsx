@@ -196,7 +196,7 @@ export const ExecutiveOverview = ({ proposals }: { proposals?: Proposal[] }): JS
               <Flex>
                 <WithdrawOldChief />
                 <ExternalLink
-                  href="https://forum.makerdao.com/t/dschief-v1-2-migration-steps/5412"
+                  href="https://forum.gsuprotocol.io/t/dschief-v1-2-migration-steps/5412"
                   title="View migration steps"
                 >
                   <Button

@@ -19,7 +19,7 @@ export function MigrationInfo({
         <Text as="p" variant="secondary">
           GSU protocol delegate contracts are{' '}
           <ExternalLink
-            href="https://manual.makerdao.com/delegation/delegate-expiration 
+            href="https://manual.gsuprotocol.io/delegation/delegate-expiration 
 "
             title="Delegate expiration information"
           >

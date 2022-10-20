@@ -47,7 +47,7 @@ export const CoreUnitModal = ({ isOpen, onDismiss }: Props): JSX.Element => {
               generally advises against delegating to CU members.{' '}
             </Text>
             <ThemeUILink
-              href={'https://manual.makerdao.com/delegation/overview/separation-of-powers'}
+              href={'https://manual.gsuprotocol.io/delegation/overview/separation-of-powers'}
               sx={{ mb: 3 }}
               target="_blank"
               rel="noreferrer"

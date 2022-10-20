@@ -30,7 +30,7 @@ type LandingResource = {
 export const resources: LandingResource[] = [
   {
     title: 'GSU protocol Governance Forum',
-    url: 'https://forum.makerdao.com/',
+    url: 'https://forum.gsuprotocol.io/',
     category: ResourceCategory.GOVERNANCE,
     bg: ResourceBackground.GOVERNANCE,
     color: ResourceColor.GOVERNANCE,
@@ -39,7 +39,7 @@ export const resources: LandingResource[] = [
   },
   {
     title: 'GSU protocol Operation Manual',
-    url: 'https://manual.makerdao.com',
+    url: 'https://manual.gsuprotocol.io',
     category: ResourceCategory.GOVERNANCE,
     bg: ResourceBackground.GOVERNANCE,
     color: ResourceColor.GOVERNANCE,

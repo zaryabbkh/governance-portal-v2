@@ -116,7 +116,7 @@ export default function DelegateMigrationPage(): React.ReactElement {
                 <Text as="p" variant="secondary">
                   One or more of your GSU protocol delegate&lsquo;s contracts are expiring.{' '}
                   <ExternalLink
-                    href="https://manual.makerdao.com/delegation/delegate-expiration"
+                    href="https://manual.gsuprotocol.io/delegation/delegate-expiration"
                     title="Read more about delegate expiration"
                   >
                     <span sx={{ color: 'accentBlue' }}>Read more about delegate expiration.</span>

@@ -23,7 +23,7 @@ export const infoPoints: InfoPoint[] = [
     titleSecond: 'off-chain governance',
     links: [
       {
-        linkHref: 'https://manual.makerdao.com/governance/voting-in-makerdao/off-chain-governance',
+        linkHref: 'https://manual.gsuprotocol.io/governance/voting-in-makerdao/off-chain-governance',
         linkTitle: 'Learn more about off-chain governance'
       }
     ],
@@ -40,7 +40,7 @@ export const infoPoints: InfoPoint[] = [
     titleSecond: 'on-chain governance',
     links: [
       {
-        linkHref: 'https://manual.makerdao.com/governance/voting-in-makerdao/on-chain-governance',
+        linkHref: 'https://manual.gsuprotocol.io/governance/voting-in-makerdao/on-chain-governance',
         linkTitle: 'Learn more about on-chain governance'
       }
     ],
@@ -67,7 +67,7 @@ export const infoPoints: InfoPoint[] = [
     titleSecond: 'Delegate your voting power',
     links: [
       {
-        linkHref: 'https://manual.makerdao.com/delegation/delegate-expiration',
+        linkHref: 'https://manual.gsuprotocol.io/delegation/delegate-expiration',
         linkTitle: 'Learn more about delegation'
       },
       {

@@ -49,11 +49,11 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
       header: t('Governance'),
       list: [
         {
-          url: 'https://forum.makerdao.com/',
+          url: 'https://forum.gsuprotocol.io/',
           title: t('Forum')
         },
         {
-          url: 'https://manual.makerdao.com/',
+          url: 'https://manual.gsuprotocol.io/',
           title: t('Operational Manual')
         },
         {
@@ -65,11 +65,11 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
           title: t('Gov Tracking Sheet')
         },
         {
-          url: 'https://manual.makerdao.com/governance/governance-cycle/monthly-governance-cycle',
+          url: 'https://manual.gsuprotocol.io/governance/governance-cycle/monthly-governance-cycle',
           title: t('Monthly Gov Cycle')
         },
         {
-          url: 'https://manual.makerdao.com/governance/governance-cycle/weekly-governance-cycle',
+          url: 'https://manual.gsuprotocol.io/governance/governance-cycle/weekly-governance-cycle',
           title: t('Weekly Gov Cycle')
         }
       ]
