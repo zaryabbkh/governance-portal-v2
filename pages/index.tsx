@@ -178,24 +178,24 @@ const LandingPage = ({ proposals, polls, delegates, stats, mkrOnHat, hat, mkrInC
                   </Box>
                 </Flex>
                 <Flex sx={{ py: 3, px: [1, 3], width: ['100%', '100%', '50%'], flexDirection: 'column' }}>
-                  <Flex sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
-                    <Heading>Latest Executive</Heading>
-                    <InternalLink href={'/executive'} title="Latest Executive">
-                      <ViewMore />
-                    </InternalLink>
-                  </Flex>
+                  {proposals?.length > 0 && (
+                    <Flex sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
+                      <Heading>Latest Executive</Heading>
+                      <InternalLink href={'/executive'} title="Latest Executive">
+                        <ViewMore />
+                      </InternalLink>
+                    </Flex>
+                  )}
                   <Flex sx={{ mt: 3 }}>
                     <ErrorBoundary componentName="Latest Executive">
                       {proposals ? (
-                        proposals.length > 0 ? (
+                        proposals.length > 0 && (
                           <ExecutiveOverviewCard
                             votedProposals={votedProposals}
                             account={account}
                             isHat={hat ? hat.toLowerCase() === proposals[0].address.toLowerCase() : false}
                             proposal={proposals[0]}
                           />
-                        ) : (
-                          <Text>No proposals found</Text>
                         )
                       ) : (
                         <Skeleton />
