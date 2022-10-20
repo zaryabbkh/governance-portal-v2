@@ -81,7 +81,7 @@ const HeaderMenu = ({ onToggleTheme, mode, ...props }): JSX.Element => {
         >
           <ExternalLink
             styles={{ variant: 'links.nostyle' }}
-            href="https://discord.gg/GHcFMdKden"
+            href="https://discord.com/invite/cm3tmM37W3"
             title="Support"
           >
             <MenuItemContent icon="discord_outline" label="Support" />
@@ -434,7 +434,7 @@ const MobileMenu = ({ hide, router, gas, onToggleTheme, mode, network }) => {
             <Flex onClick={hide}>
               <ExternalLink
                 styles={{ variant: 'links.nostyle' }}
-                href="https://discord.gg/GHcFMdKden"
+                href="https://discord.com/invite/cm3tmM37W3"
                 title="Support"
               >
                 <MenuItemContent icon="discord_outline" label="Support" />
