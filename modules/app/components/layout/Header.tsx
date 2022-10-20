@@ -109,7 +109,7 @@ const HeaderMenu = ({ onToggleTheme, mode, ...props }): JSX.Element => {
         >
           <ExternalLink
             styles={{ variant: 'links.nostyle' }}
-            href="https://makerdao.world/en/learn/governance/"
+            href="https://gsuprotocol.world/en/learn/governance/"
             title="FAQs"
           >
             <MenuItemContent icon="faq" label="FAQs" />
@@ -455,7 +455,7 @@ const MobileMenu = ({ hide, router, gas, onToggleTheme, mode, network }) => {
             <Flex onClick={hide}>
               <ExternalLink
                 styles={{ variant: 'links.nostyle' }}
-                href="https://makerdao.world/en/learn/governance/"
+                href="https://gsuprotocol.world/en/learn/governance/"
                 title="FAQs"
               >
                 <MenuItemContent icon="faq" label="FAQs" />

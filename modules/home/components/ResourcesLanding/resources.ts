@@ -58,8 +58,8 @@ export const resources: LandingResource[] = [
       'A daily updated breakdown of the current and future governance actions taking place in GSU protocol.'
   },
   {
-    title: 'Oasis',
-    url: 'https://oasis.app/',
+    title: 'gsucoin',
+    url: 'https://gsuprotocol.io/',
     category: ResourceCategory.PRODUCTS_AND_TOOLS,
     bg: ResourceBackground.PRODUCTS_AND_TOOLS,
     color: ResourceColor.PRODUCTS_AND_TOOLS,
@@ -69,7 +69,7 @@ export const resources: LandingResource[] = [
   },
   {
     title: 'Auctions Dashboard',
-    url: 'http://auctions.makerdao.network',
+    url: 'http://unified-auctions.gsuprotocol.io',
     category: ResourceCategory.PRODUCTS_AND_TOOLS,
     bg: ResourceBackground.PRODUCTS_AND_TOOLS,
     color: ResourceColor.PRODUCTS_AND_TOOLS,
@@ -107,7 +107,7 @@ export const resources: LandingResource[] = [
   },
   {
     title: 'API Docs',
-    url: 'https://vote.makerdao.com/api-docs',
+    url: '/api-docs',
     category: ResourceCategory.DEVELOPERS,
     bg: ResourceBackground.DEVELOPERS,
     color: ResourceColor.DEVELOPERS,

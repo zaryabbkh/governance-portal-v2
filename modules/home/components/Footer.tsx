@@ -4,6 +4,7 @@ import { ExternalLink } from 'modules/app/components/ExternalLink';
 import React from 'react';
 import { translate } from '@makerdao/i18n-helper';
 import { useBreakpointIndex } from '@theme-ui/match-media';
+import { GenericLink } from 'modules/app/components/GenericLink';
 
 const ContactSection = ({ heading, logos, icon }) => {
   return (
@@ -57,33 +58,33 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
           title: t('Operational Manual')
         },
         {
-          url: 'https://makerdao.world/en/learn/governance/',
+          url: 'https://gsuprotocol.world/en/learn/governance/',
           title: t('Governance FAQs')
-        },
-        {
-          url: 'https://docs.google.com/spreadsheets/d/1LWNlv6hr8oXebk8rvXZBPRVDjN-3OrzI0IgLwBVk0vM/edit#gid=0',
-          title: t('Gov Tracking Sheet')
-        },
-        {
-          url: 'https://manual.gsuprotocol.io/governance/governance-cycle/monthly-governance-cycle',
-          title: t('Monthly Gov Cycle')
-        },
-        {
-          url: 'https://manual.gsuprotocol.io/governance/governance-cycle/weekly-governance-cycle',
-          title: t('Weekly Gov Cycle')
         }
+        // {
+        //   url: 'https://docs.google.com/spreadsheets/d/1LWNlv6hr8oXebk8rvXZBPRVDjN-3OrzI0IgLwBVk0vM/edit#gid=0',
+        //   title: t('Gov Tracking Sheet')
+        // },
+        // {
+        //   url: 'https://manual.gsuprotocol.io/governance/governance-cycle/monthly-governance-cycle',
+        //   title: t('Monthly Gov Cycle')
+        // },
+        // {
+        //   url: 'https://manual.gsuprotocol.io/governance/governance-cycle/weekly-governance-cycle',
+        //   title: t('Weekly Gov Cycle')
+        // }
       ]
     },
     {
       header: t('Products & Tools'),
       list: [
         {
-          url: 'https://makerdao.statuspage.io/',
+          url: 'https://statuspage.gsuprotocol.io/',
           title: t('Service Status')
         },
 
         {
-          url: 'https://auctions.makerdao.network/',
+          url: 'https://unified-auctions.gsuprotocol.io/',
           title: t('Auctions Dashboard')
         },
         // {
@@ -116,7 +117,7 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
           title: t('Technical Docs')
         },
         {
-          url: 'https://vote.makerdao.com/api-docs',
+          url: '/api-docs',
           title: t('API Docs')
         },
         {
@@ -205,9 +206,9 @@ export default function Footer({ locale = 'en' }: { locale?: string }): React.Re
                 </Text>
                 {group.list.map(({ url, title }) => {
                   return (
-                    <ExternalLink key={title} href={url} title={title} styles={{ fontSize: [1, 2] }}>
+                    <GenericLink key={title} href={url} title={title}>
                       <Text>{title}</Text>
-                    </ExternalLink>
+                    </GenericLink>
                   );
                 })}
               </Flex>

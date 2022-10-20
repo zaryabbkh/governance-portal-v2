@@ -18,7 +18,7 @@ const resources: Record<ResourceType, Resource> = {
     boxTitle: 'General Governance Resources',
     links: [
       { linkTitle: 'GSU protocol Forum', url: 'https://forum.gsuprotocol.io/' },
-      { linkTitle: 'Governance FAQs', url: 'https://makerdao.world/learn/governance/governance-faq/' },
+      { linkTitle: 'Governance FAQs', url: 'https://gsuprotocol.world/learn/governance/governance-faq/' },
       {
         linkTitle: 'Governance Risk Framework',
         url: 'https://blog.makerdao.com/makerdao-governance-risk-framework/'
@@ -26,7 +26,7 @@ const resources: Record<ResourceType, Resource> = {
       { linkTitle: 'Awesome GSU protocol', url: 'https://github.com/makerdao/awesome-makerdao/' },
       {
         linkTitle: 'Governance Call Schedule',
-        url: 'https://makerdao.world/resources/governance_and_risk_meetings/'
+        url: 'https://gsuprotocol.world/resources/governance_and_risk_meetings/'
       }
     ]
   },
@@ -35,19 +35,19 @@ const resources: Record<ResourceType, Resource> = {
     links: [
       {
         linkTitle: 'How to participate in GSU protocol governance?',
-        url: 'https://makerdao.world/en/learn/governance/how-voting-works/'
+        url: 'https://gsuprotocol.world/en/learn/governance/how-voting-works/'
       },
       {
         linkTitle: 'What are Governance Polls?',
-        url: 'https://makerdao.world/en/learn/governance/how-voting-works#governance-polls'
+        url: 'https://gsuprotocol.world/en/learn/governance/how-voting-works#governance-polls'
       },
       {
         linkTitle: 'How is voting weight calculated?',
-        url: 'https://makerdao.world/en/learn/governance/how-voting-works#governance-polls-and-executive-votes'
+        url: 'https://gsuprotocol.world/en/learn/governance/how-voting-works#governance-polls-and-executive-votes'
       },
       {
         linkTitle: 'How to set up your wallet for voting?',
-        url: 'https://makerdao.world/en/learn/governance/voting-setup/'
+        url: 'https://gsuprotocol.world/en/learn/governance/voting-setup/'
       }
     ]
   },
@@ -56,23 +56,23 @@ const resources: Record<ResourceType, Resource> = {
     links: [
       {
         linkTitle: 'How to participate in GSU protocol governance?',
-        url: 'https://makerdao.world/en/learn/governance/how-voting-works/'
+        url: 'https://gsuprotocol.world/en/learn/governance/how-voting-works/'
       },
       {
         linkTitle: 'What are Executive Votes?',
-        url: 'https://makerdao.world/en/learn/governance/how-voting-works#executive-votes'
+        url: 'https://gsuprotocol.world/en/learn/governance/how-voting-works#executive-votes'
       },
       {
         linkTitle: 'How to manually verify Executive Spells',
-        url: 'https://makerdao.world/en/learn/governance/audit-exec-spells'
+        url: 'https://gsuprotocol.world/en/learn/governance/audit-exec-spells'
       },
       {
         linkTitle: 'How is voting weight calculated?',
-        url: 'https://makerdao.world/en/learn/governance/how-voting-works#governance-polls-and-executive-votes'
+        url: 'https://gsuprotocol.world/en/learn/governance/how-voting-works#governance-polls-and-executive-votes'
       },
       {
         linkTitle: 'How to set up your wallet for voting?',
-        url: 'https://makerdao.world/en/learn/governance/voting-setup/'
+        url: 'https://gsuprotocol.world/en/learn/governance/voting-setup/'
       }
     ]
   },
