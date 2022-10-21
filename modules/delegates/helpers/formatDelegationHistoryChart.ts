@@ -43,12 +43,12 @@ export const formatDelegationHistoryChart = (
       const mostRecent = existingItem[existingItem.length - 1];
       output.push({
         date: subDays(new Date(), end - i),
-        GSUp: new BigNumber(mostRecent.callerLockTotal).toNumber()
+        MKR: new BigNumber(mostRecent.callerLockTotal).toNumber()
       });
     } else {
       output.push({
         date: subDays(new Date(), end - i),
-        GSUp: output[output.length - 1].MKR
+        MKR: output[output.length - 1].MKR
       });
     }
   }
