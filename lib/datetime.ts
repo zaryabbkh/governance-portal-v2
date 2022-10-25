@@ -6,7 +6,7 @@ export const SECONDS_PER_YEAR = 365 * 24 * 60 * 60;
 export const formatDateWithTime = (dateString: Date | undefined | number | string): string => {
   if (!dateString) return '';
 
-  const date = new Date(dateString);
+  const date = new Date(Number(dateString) * 1000);
   const utcTime = utcToZonedTime(date, 'UTC');
 
   try {
