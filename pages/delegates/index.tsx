@@ -87,8 +87,8 @@ const Delegates = ({ delegates, stats, tags }: DelegatesPageData) => {
     <PrimaryLayout sx={{ maxWidth: [null, null, null, 'page', 'dashboard'] }}>
       <HeadComponent
         title="Delegates"
-        description="Vote delegation allows for MKR holders to delegate their voting power to delegates, which increases the effectiveness and efficiency of the governance process."
-        image={'https://vote.makerdao.com/seo/delegates.png'}
+        description="Vote delegation allows for GSUp holders to delegate their voting power to delegates, which increases the effectiveness and efficiency of the governance process."
+        image={'https://vote.gsuprotocol.io/seo/delegates.png'}
       />
       <Stack>
         <Flex sx={{ alignItems: 'center', flexDirection: ['column', 'row'] }}>
@@ -140,7 +140,7 @@ const Delegates = ({ delegates, stats, tags }: DelegatesPageData) => {
                   <Flex
                     sx={{
                       borderRadius: '50%',
-                      backgroundColor: 'muted',
+                      backgroundColor: 'secondary',
                       p: 2,
                       width: '111px',
                       height: '111px',

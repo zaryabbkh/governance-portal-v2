@@ -28,23 +28,23 @@ const config: EthSdkConfig = {
       vow: '0xA950524441892A31ebddF91d3cEEFa04Bf454466'
     },
     goerli: {
-      chief: '0x33Ed584fc655b08b2bca45E1C5b5f07c98053bC1',
-      dai: '0x11fe4b6ae13d2a6055c8d9cf65c55bac32b5d844',
+      chief: '0xD4bf8D5BB06Ce0c11fD861786442E06E7370139F',
+      dai: '0x252D98faB648203AA33310721bBbDdfA8F1b6587',
       // This is an arbitrary spell address that must be changed with each implementation
       dssSpell: '0xc4BCED0F4f141915dcCE58DbAB2D2DEe88af472B',
-      end: '0xb82F60bAf6980b9fE035A82cF6Acb770C06d3896',
-      esm: '0x023A960cb9BE7eDE35B433256f4AfE9013334b55',
-      iou: '0x651D1B91e4F657392a51Dba7A6A1A1a72eC6aD1c',
+      end: '0x5d4402413e6dA232805d210B8615d64b196a7626',
+      esm: '0x8bdD5f418E64Ec0D507034C74A892DDF5CA1270a',
+      iou: '0x76DE3949Cdc682A03d03D4DD7b2be77830942BD5',
 
-      mkr: '0xc5e4eab513a7cd12b2335e8a0d57273e13d499f7',
-      pause: '0xefcd235B1f13e7fC5eab1d05C910d3c390b3439F',
-      pauseProxy: '0x5DCdbD3cCF9B09EAAD03bc5f50fA2B3d3ACA0121',
-      polling: '0xdbE5d00b2D8C13a77Fb03Ee50C87317dbC1B15fb',
-      pot: '0x50672F0a14B40051B65958818a7AcA3D54Bd81Af',
-      vat: '0xB966002DDAa2Baf48369f5015329750019736031',
-      voteDelegateFactory: '0xE2d249AE3c156b132C40D07bd4d34e73c1712947',
-      voteProxyFactory: '0x1a7c1ee5eE2A3B67778ff1eA8c719A3fA1b02b6f',
-      vow: '0x23f78612769b9013b3145E43896Fa1578cAa2c2a'
+      mkr: '0x66076a3CA93Da5A2E134852C4f2aDd26531b8bB2',
+      pause: '0x32aB913942d76fAd846084870192EF2a8A240fD9',
+      pauseProxy: '0xB8BB517e8b21852dF484BFac8Ef4C23b1B1BFe4e',
+      polling: '0x2F82f408868D0CDe62E6d367Efc285f2a0a1fba9',
+      pot: '0x38c0F1e7ECB3A6F73CFd01996cB22C6862923531',
+      vat: '0x56BE2C3B452FB58b49fc6c1e74d9ec36317f0E2f',
+      voteDelegateFactory: '0xEdcD644f03A54D2113eedfED5159D2B73cb9b434',
+      voteProxyFactory: '0xF283dc19A36d22968cFfBDD1F575432e90341392',
+      vow: '0x05E591d16cCE895b879820dae080dBe6149E5642'
     }
   },
   etherscanKeys: { mainnet: process.env.ETHERSCAN_KEY || '' }

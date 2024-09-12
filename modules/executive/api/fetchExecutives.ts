@@ -10,9 +10,11 @@ import { analyzeSpell, getExecutiveMKRSupport } from './analyzeSpell';
 import { ZERO_ADDRESS } from 'modules/web3/constants/addresses';
 import { BigNumber } from 'ethers';
 import logger from 'lib/logger';
-import { githubExecutivesCacheKey } from 'modules/cache/constants/cache-keys';
+import { getExecutiveProposalsCacheKey, githubExecutivesCacheKey } from 'modules/cache/constants/cache-keys';
 import { ONE_HOUR_IN_MS } from 'modules/app/constants/time';
 import { allGithubExecutives } from 'modules/gql/queries/allGithubExecutives';
+import { config } from 'lib/config';
+
 
 export async function getGithubExecutives(network: SupportedNetworks): Promise<CMSProposal[]> {
   const cachedProposals = await cacheGet(githubExecutivesCacheKey, network);
@@ -23,21 +25,21 @@ export async function getGithubExecutives(network: SupportedNetworks): Promise<C
   const proposalIndex = await (await fetch(EXEC_PROPOSAL_INDEX)).json();
 
   const githubRepo = {
-    owner: 'makerdao',
-    repo: 'community',
-    page: 'governance/votes'
+    owner: config.EXECUTIVE_GITHUB_OWNER,
+    repo: config.EXECUTIVE_GITHUB_REPO,
+    branch: config.EXECUTIVE_GITHUB_BRANCH,
+    page: config.EXECUTIVE_GITHUB_PAGE
   };
 
   const githubResponse = await fetchGithubGraphQL(githubRepo, allGithubExecutives);
+
   const proposals = githubResponse.repository.object.entries
     .filter(entry => entry.type === 'blob')
     .map(file => {
       try {
         const pathParts = file.path.split('/');
         const last = pathParts.pop();
-        const path = `https://raw.githubusercontent.com/${githubRepo.owner}/${
-          githubRepo.repo
-        }/master/${pathParts.join('/')}/${encodeURIComponent(last)}`;
+        const path = `https://raw.githubusercontent.com/${githubRepo.owner}/${githubRepo.repo}/${githubRepo.branch}/${pathParts.join('/')}/${encodeURIComponent(last)}`;
         return parseExecutive(file.object.text, proposalIndex, path, network);
       } catch (e) {
         logger.error(`getGithubExecutives: network ${network}`, e);
@@ -46,6 +48,7 @@ export async function getGithubExecutives(network: SupportedNetworks): Promise<C
       }
     });
 
+    // console.log(proposals)
   const filteredProposals: CMSProposal[] = proposals
     .filter(x => !!x)
     .filter(x => x?.address !== ZERO_ADDRESS) as CMSProposal[];
@@ -78,20 +81,25 @@ async function getGithubExecutivesWithMKR(network: SupportedNetworks): Promise<C
   return mkrSupports;
 }
 
-export async function getExecutiveProposals(
-  start: number,
-  limit: number,
-  sortBy: 'date' | 'mkr' | 'active',
-  network?: SupportedNetworks,
+export async function getExecutiveProposals({
+  start = 0,
+  limit = 5,
+  sortBy = 'active',
   startDate = 0,
-  endDate = 0
-): Promise<Proposal[]> {
-  const net = network ? network : DEFAULT_NETWORK.network;
-
+  endDate = 0,
+  network = DEFAULT_NETWORK.network
+}: {
+  start?: number;
+  limit?: number;
+  sortBy?: 'date' | 'mkr' | 'active';
+  startDate?: number;
+  endDate?: number;
+  network?: SupportedNetworks;
+}): Promise<Proposal[]> {
   // Use goerli as a Key for Goerli fork. In order to pick the the current executives
-  const currentNetwork = net === SupportedNetworks.GOERLIFORK ? SupportedNetworks.GOERLI : net;
+  const currentNetwork = network === SupportedNetworks.GOERLIFORK ? SupportedNetworks.GOERLI : network;
 
-  const cacheKey = `proposals-${start}-${limit}-${sortBy}-${startDate}-${endDate}`;
+  const cacheKey = getExecutiveProposalsCacheKey(start, limit, sortBy, startDate, endDate);
 
   const cachedProposals = await cacheGet(cacheKey, currentNetwork);
   if (cachedProposals) {

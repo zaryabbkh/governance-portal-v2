@@ -56,7 +56,7 @@ const ModalContent = ({
       <Box>
         {tx && (
           <Stack sx={{ textAlign: 'center' }}>
-            <Text as="p" variant="microHeading" color="onBackgroundAlt">
+            <Text as="p" variant="microHeading">
               {tx.status === 'pending' ? 'Transaction Pending' : 'Confirm Transaction'}
             </Text>
 
@@ -66,12 +66,12 @@ const ModalContent = ({
 
             {tx.status !== 'pending' && (
               <Box>
-                <Text sx={{ color: 'mutedAlt', fontSize: 3 }}>
+                <Text sx={{ color: 'secondaryEmphasis', fontSize: 3 }}>
                   Please use your wallet to confirm this transaction.
                 </Text>
                 <Text
                   as="p"
-                  sx={{ color: 'muted', cursor: 'pointer', fontSize: 2, mt: 2 }}
+                  sx={{ color: 'secondary', cursor: 'pointer', fontSize: 2, mt: 2 }}
                   onClick={() => resetTx(null)}
                 >
                   Cancel
@@ -83,11 +83,11 @@ const ModalContent = ({
         {!tx && chiefAllowance && (
           <Stack gap={2}>
             <Box sx={{ textAlign: 'center' }}>
-              <Text as="p" variant="microHeading" color="onBackgroundAlt">
+              <Text as="p" variant="microHeading">
                 Deposit into voting contract
               </Text>
-              <Text as="p" sx={{ color: 'mutedAlt', fontSize: 3, mt: 3 }}>
-                Input the amount of MKR to deposit into the voting contract.
+              <Text as="p" sx={{ color: 'secondaryEmphasis', fontSize: 3, mt: 3 }}>
+                Input the amount of GSUp to deposit into the voting contract.
               </Text>
             </Box>
 
@@ -111,18 +111,18 @@ const ModalContent = ({
                 });
               }}
             >
-              Deposit MKR
+              Deposit GSUp
             </Button>
           </Stack>
         )}
         {!tx && !chiefAllowance && (
           <Stack gap={3}>
             <Box sx={{ textAlign: 'center' }}>
-              <Text as="p" variant="microHeading" color="onBackgroundAlt">
+              <Text as="p" variant="microHeading">
                 Approve voting contract
               </Text>
-              <Text as="p" sx={{ color: 'mutedAlt', fontSize: 3, mt: 3 }}>
-                Approve the transfer of MKR to the voting contract.
+              <Text as="p" sx={{ color: 'secondaryEmphasis', fontSize: 3, mt: 3 }}>
+                Approve the transfer of GSUp to the voting contract.
               </Text>
             </Box>
 
@@ -144,13 +144,13 @@ const ModalContent = ({
               <Text as="p" sx={{ fontSize: 2, mt: 3, color: 'textSecondary', textAlign: 'center' }}>
                 Interested in creating a proxy contract instead of depositing directly into Chief? Learn more{' '}
                 <ExternalLink
-                  href="https://blog.makerdao.com/the-makerdao-voting-proxy-contract/"
+                  href="https://blog.gsuprotocol.io/the-makerdao-voting-proxy-contract/"
                   title="Read about proxy contracts"
                 >
                   <Text sx={{ color: 'accentBlue', fontSize: 2 }}>here</Text>
                 </ExternalLink>{' '}
                 and create one{' '}
-                <ExternalLink href="https://v1.vote.makerdao.com/proxysetup" title="Go to proxy setup">
+                <ExternalLink href="https://v1.vote.gsuprotocol.io/proxysetup" title="Go to proxy setup">
                   <Text sx={{ color: 'accentBlue', fontSize: 2 }}>here</Text>
                 </ExternalLink>
                 .

@@ -60,7 +60,7 @@ export default function VoteBreakdown({
                         textAlign: 'right'
                       }}
                     >
-                      {`${formatValue(parseUnits(mkrSupport.toString()))} MKR Voting`}
+                      {`${formatValue(parseUnits(mkrSupport.toString()))} GSUp Voting`}
                       {!isResultDisplayApprovalBreakdown(poll.parameters)
                         ? ` (${formatValue(parseUnits(tallyResult.firstPct.toString()))}%)`
                         : ''}
@@ -78,7 +78,7 @@ export default function VoteBreakdown({
                   <Box my={2}>
                     <Progress
                       sx={{
-                        backgroundColor: 'muted',
+                        backgroundColor: 'secondary',
                         mb: '3',
                         height: 2,
                         color: getVoteColor(tallyResult.optionId, poll.parameters)
@@ -126,7 +126,7 @@ export default function VoteBreakdown({
                     >
                       {`${formatValue(
                         parseUnits(firstChoice.plus(transfer).toString())
-                      )} MKR Voting (${formatValue(
+                      )} GSUp Voting (${formatValue(
                         parseUnits(
                           new BigNumberJS(tallyResult.firstPct).plus(tallyResult?.transferPct || 0).toString()
                         )
@@ -150,7 +150,7 @@ export default function VoteBreakdown({
                         <Box>
                           <Progress
                             sx={{
-                              backgroundColor: 'muted',
+                              backgroundColor: 'secondary',
                               height: 2,
                               color: `${transfer.lt(0) ? '#f57350' : 'darkPrimary'}`,
                               position: 'absolute'
@@ -212,7 +212,7 @@ export default function VoteBreakdown({
                       textAlign: 'right'
                     }}
                   >
-                    {`${formatValue(parseUnits(mkrSupport.toString()))} MKR Voting (${formatValue(
+                    {`${formatValue(parseUnits(mkrSupport.toString()))} GSUp Voting (${formatValue(
                       parseUnits(tallyResult.firstPct.toString())
                     )}%)`}
                   </Text>
@@ -228,7 +228,7 @@ export default function VoteBreakdown({
                   <Box my={2}>
                     <Progress
                       sx={{
-                        backgroundColor: 'muted',
+                        backgroundColor: 'secondary',
                         mb: '3',
                         height: 2,
                         color: getVoteColor(tallyResult.optionId, poll.parameters)

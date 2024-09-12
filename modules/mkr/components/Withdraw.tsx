@@ -49,7 +49,7 @@ const ModalContent = ({ close, ...props }) => {
       <Box>
         {transaction && (
           <Stack sx={{ textAlign: 'center' }}>
-            <Text as="p" variant="microHeading" color="onBackgroundAlt">
+            <Text as="p" variant="microHeading">
               {transaction.status === 'pending' ? 'Transaction Pending' : 'Confirm Transaction'}
             </Text>
 
@@ -59,12 +59,12 @@ const ModalContent = ({ close, ...props }) => {
 
             {transaction.status !== 'pending' && (
               <Box>
-                <Text as="p" sx={{ color: 'mutedAlt', fontSize: 3 }}>
+                <Text as="p" sx={{ color: 'secondaryEmphasis', fontSize: 3 }}>
                   Please use your wallet to confirm this transaction.
                 </Text>
                 <Text
                   as="p"
-                  sx={{ color: 'muted', cursor: 'pointer', fontSize: 2, mt: 2 }}
+                  sx={{ color: 'secondary', cursor: 'pointer', fontSize: 2, mt: 2 }}
                   onClick={() => resetTransaction(null)}
                 >
                   Cancel
@@ -76,11 +76,11 @@ const ModalContent = ({ close, ...props }) => {
         {!transaction && allowanceOk && (
           <Stack gap={2}>
             <Box sx={{ textAlign: 'center' }}>
-              <Text as="p" variant="microHeading" color="onBackgroundAlt" mb={2}>
+              <Text as="p" variant="microHeading" mb={2}>
                 Withdraw from voting contract
               </Text>
-              <Text as="p" sx={{ color: 'mutedAlt', fontSize: 3 }}>
-                Input the amount of MKR to withdraw from the voting contract.
+              <Text as="p" sx={{ color: 'secondaryEmphasis', fontSize: 3 }}>
+                Input the amount of GSUp to withdraw from the voting contract.
               </Text>
             </Box>
 
@@ -89,13 +89,13 @@ const ModalContent = ({ close, ...props }) => {
                 onChange={setMkrToWithdraw}
                 balance={lockedMkr}
                 value={mkrToWithdraw}
-                balanceText="MKR in contract:"
+                balanceText="GSUp in contract:"
               />
             </Box>
 
             {voteProxyContract && account === voteProxyHotAddress && (
               <Alert variant="notice" sx={{ fontWeight: 'normal' }}>
-                You are using the hot wallet for a voting proxy. MKR will be withdrawn to the cold wallet.
+                You are using the hot wallet for a voting proxy. GSUp will be withdrawn to the cold wallet.
               </Alert>
             )}
             <Button
@@ -114,18 +114,18 @@ const ModalContent = ({ close, ...props }) => {
                 });
               }}
             >
-              Withdraw MKR
+              Withdraw GSUp
             </Button>
           </Stack>
         )}
         {!transaction && !allowanceOk && (
           <Stack gap={3} {...props}>
             <Box sx={{ textAlign: 'center' }}>
-              <Text as="p" variant="microHeading" color="onBackgroundAlt" mb={2}>
+              <Text as="p" variant="microHeading" mb={2}>
                 Approve voting contract
               </Text>
-              <Text as="p" sx={{ color: 'mutedAlt', fontSize: 3 }}>
-                Approve the transfer of IOU tokens to the voting contract to withdraw your MKR.
+              <Text as="p" sx={{ color: 'secondaryEmphasis', fontSize: 3 }}>
+                Approve the transfer of IOU tokens to the voting contract to withdraw your GSUp.
               </Text>
             </Box>
 

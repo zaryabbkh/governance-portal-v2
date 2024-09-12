@@ -15,6 +15,7 @@ import { InstantRunoffResults } from '../types/instantRunoff';
 import { parseRawOptionId } from '../helpers/parseRawOptionId';
 import { extractSatisfiesComparison } from './victory_conditions/comparison';
 import { hasVictoryConditionInstantRunOff } from '../helpers/utils';
+import { isExponential } from 'lib/utils';
 
 type WinnerOption = { winner: number | null; results: InstantRunoffResults | null };
 
@@ -86,7 +87,7 @@ export async function fetchPollTally(poll: Poll, network: SupportedNetworks): Pr
 
   // Remove all the votes that voted "Abstain" in any option. (It should only be 1 abstain option)
   const filteredVotes = votes.filter(vote => {
-    // Store the total MKR
+    // Store the total GSUp
     totalMkrParticipation = totalMkrParticipation.plus(vote.mkrSupport);
     if (vote.ballot.filter(i => abstain.indexOf(i) !== -1).length > 0) {
       return false;
@@ -175,10 +176,10 @@ export async function fetchPollTally(poll: Poll, network: SupportedNetworks): Pr
   // Format results
   const votesInfo: { [key: number]: BigNumber } = {};
 
-  // needs to consider IRV without comparator threshold met when aggregating MKR
+  // needs to consider IRV without comparator threshold met when aggregating GSUp
   const isIrv = hasVictoryConditionInstantRunOff(poll.parameters.victoryConditions);
 
-  // Aggregate the MKR support
+  // Aggregate the GSUp support
   votes.forEach(vote => {
     // if IRV and no winner, only consider weight from first ballot option
     if (isIrv && !winnerOption.results) {
@@ -205,9 +206,9 @@ export async function fetchPollTally(poll: Poll, network: SupportedNetworks): Pr
       const optionId = parseInt(key);
       const instantRunoffOption = winnerOption.results?.options[optionId];
 
-      // To get the real MKR support we need to get the one extracted from the ranked results, for instant-runoff, since
-      // it will count the firstChoice MKR support based on the algorithm. Except for abstain
-      // for other algorithms we just use the accumulated MKR
+      // To get the real GSUp support we need to get the one extracted from the ranked results, for instant-runoff, since
+      // it will count the firstChoice GSUp support based on the algorithm. Except for abstain
+      // for other algorithms we just use the accumulated GSUp
 
       const isAbstainOption = poll.parameters.inputFormat.abstain.indexOf(parseInt(key)) !== -1;
 
@@ -216,6 +217,27 @@ export async function fetchPollTally(poll: Poll, network: SupportedNetworks): Pr
           ? instantRunoffOption?.mkrSupport || new BigNumber(0)
           : votesInfo[optionId] || new BigNumber(0);
 
+      let firstPct: string | number = 0;
+      let transferPct: string | number = 0;
+
+      if (totalMkrParticipation.gt(0)) {
+        const firstPctBn = new BigNumber(mkrSupport).div(totalMkrParticipation).times(100);
+
+        // If firstPct has too many decimal places it will be cast as an exponential number, in which case we instead cast as a string
+        firstPct = isExponential(firstPctBn.toNumber()) ? firstPctBn.toFixed(18) : firstPctBn.toNumber();
+
+        if (instantRunoffOption?.transfer) {
+          const transferPctBn = new BigNumber(instantRunoffOption?.transfer)
+            .div(totalMkrParticipation)
+            .times(100);
+
+          // Same situation for transferPct, cast as a string with regular notation if necessary
+          transferPct = isExponential(transferPctBn.toNumber())
+            ? transferPctBn.toFixed(18)
+            : transferPctBn.toNumber();
+        }
+      }
+
       return {
         optionId,
         winner: winnerOption.winner === optionId,
@@ -223,13 +245,8 @@ export async function fetchPollTally(poll: Poll, network: SupportedNetworks): Pr
         optionName: poll.options[optionId],
         eliminated: instantRunoffOption?.eliminated,
         transfer: instantRunoffOption?.transfer?.toString(),
-        firstPct: totalMkrParticipation.gt(0)
-          ? new BigNumber(mkrSupport).div(totalMkrParticipation).times(100).toNumber()
-          : 0,
-        transferPct:
-          totalMkrParticipation.gt(0) && instantRunoffOption?.transfer
-            ? new BigNumber(instantRunoffOption?.transfer).div(totalMkrParticipation).times(100).toNumber()
-            : 0
+        firstPct,
+        transferPct
       };
     })
     .sort((a, b) => {
